@@ -6,4 +6,8 @@ describe('Home', () => {
     render(<App/>);
     expect(screen.getByText(/Rosa/i)).toBeInTheDocument();
   });
+  it('muestra el titulo de la tienda', () => {
+    render(<App />);
+    expect(screen.getByText(/Dulces pétalos/i)).toBeInTheDocument();
+  })
 })
