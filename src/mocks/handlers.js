@@ -1,6 +1,6 @@
 // src/mocks/handlers.js
 import { rest } from 'msw'
-import * as products from './fixtures/products.json'
+import * as products from '../fixtures/products.json'
   
 export const handlers = [
   rest.get('/api/product', (req, res, ctx) => {
